@@ -18,9 +18,9 @@ MLX90614_REG_ID3 	= 0x3E
 MLX90614_REG_ID4 	= 0x3F
 
 class xSL19:
-    def __init__(self):
+	def __init__(self):
 		self.addr = 0x5A
-        self.i2c = xCore()
+		self.i2c = xCore()
 
 	def init(self):
 		return True
