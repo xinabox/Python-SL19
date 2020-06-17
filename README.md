@@ -1,2 +1,2 @@
-# Python-XCHIP
-Template for python libraries
+# Python-SL19
+Infrared object temperature sensor

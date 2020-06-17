@@ -1,16 +1,16 @@
 import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
-    
+
 setuptools.setup(
-    name="xinabox-CHIP",
+    name="xinabox-SL19",
     version="0.0.1",
     author="Luqmaan Baboo",
     author_email="luqmaanbaboo@gmail.com",
-    description="a template package for xchips",
+    description="Infrared object temperature sensor",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/xinabox/Python-XCHIP",
+    url="https://github.com/xinabox/Python-SL19",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
