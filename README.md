@@ -27,6 +27,8 @@ Download [Mu-editor](https://github.com/xinabox/mu-editor/releases/tag/v1.1.0a2)
 - TO DO
 
 ## Raspberry Pi
+
+Requires Python 3
 ```
 pip install xinabox-CORE
 ```
