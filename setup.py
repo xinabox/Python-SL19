@@ -12,6 +12,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/xinabox/Python-SL19",
     install_requires = ["xinabox-CORE",],
+    py_modules=["xSL19",],
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
