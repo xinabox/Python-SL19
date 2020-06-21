@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="xinabox-SL19",
-    version="0.0.6",
+    version="0.0.7",
     author="Luqmaan Baboo",
     author_email="luqmaanbaboo@gmail.com",
     description="Infrared object temperature sensor",
