@@ -1,6 +1,6 @@
-[![GitHub Issues](https://img.shields.io/github/issues/xinabox/Python-SL19.svg)](https://github.com/xinabox/Python-SL19/issues) 
-![GitHub Commit](https://img.shields.io/github/last-commit/xinabox/Python-SL19) 
-![Maintained](https://img.shields.io/maintenance/yes/2020) 
+[![GitHub Issues](https://img.shields.io/github/issues/xinabox/Python-SL19.svg)](https://github.com/xinabox/Python-SL19/issues)
+![GitHub Commit](https://img.shields.io/github/last-commit/xinabox/Python-SL19)
+![Maintained](https://img.shields.io/maintenance/yes/2020)
 ![Build status badge](https://github.com/xinabox/Python-SL19/workflows/Python/badge.svg)
 ![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -12,28 +12,33 @@ The MLX90614 is factory calibrated in wide temperature ranges: -40-125˚C for th
 
 # Usage
 
-## Mu-editor 
+## Mu-editor
 Download [Mu-editor](https://github.com/xinabox/mu-editor/releases/tag/v1.1.0a2)
 
-### CW01, CW02 and MicroBit (in development)
+### CW01 and CW02
 - Use [XinaBoxUploader](https://github.com/xinabox/XinaBoxUploader/releases/latest) and flash MicroPython to the CW01/CW02.
-- Go to the Mu Administration menu in the bottom right corner indicated by a gear icon
-- Select third-part packages tab
-- Type in 'xinabox-CORE'. On the next line type in 'xinabox-SL19' and press OK
-- Click on the Files icon and drag the downloaded files over to the board.
+- Download Python packages from the REPL with the following code:
+    ```python
+    import network
+    import upip
+    sta_if = network.WLAN(network.STA_IF)
+    sta_if.active(True)
+    sta_if.connect("ssid", "password")
+    upip.install("xinabox-SL19")
+    ```
 
 ### CC03, CS11 and CW03
 - Download the .UF2 file for CC03/CS11/CW03 [CircuitPython](https://circuitpython.org/board/xinabox_cs11/) and flash it to the board.
+- TO DO
+
+### MicroBit
 - TO DO
 
 ## Raspberry Pi
 
 Requires Python 3
 ```
-pip install xinabox-CORE
-```
-```
-pip install xinabox-SL19
+pip3 install xinabox-SL19
 ```
 
 # Example
